@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: white;
+}
+
+.form {
+  width: 100%;
+  padding: 2em 1em;
+}
+
+.form input {
+  padding: 1em;
+  width: 100%;
+}
+
+ul {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  font-size: 1.2em;
+}
+
+.todo {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.7em 0;
+}
+
+.todo:not(:last-child) {
+  border-bottom: 1px solid grey;
+}
+
+.todo span {
+  padding-left: 1em;
+}
+
+.checked {
+  text-decoration: line-through;
+  opacity: 50%;
+}
+
+.todo button {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 1em 1em 0.2em;
+  border-top: 1px solid grey;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1em;
+}
+
+.filters button {
+  background-color: transparent;
+  border: none;
+  padding: 0.4em 1em;
+}
+
+button.current {
+  border: 2px dashed grey;
+
+}
